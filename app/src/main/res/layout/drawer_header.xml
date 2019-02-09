@@ -1,0 +1,47 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="178dp"
+    android:background="#21242b"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/linearLayout">
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="10dp"
+            android:src="@mipmap/profile_woman"
+            android:layout_marginTop="30dp"/>
+
+        <TextView
+            android:id="@+id/drawer_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:layout_marginLeft="22dp"
+            android:layout_marginTop="5dp"
+            android:text="계정 이름"
+            android:textSize="15sp"
+            android:textStyle="normal"/>
+
+        <TextView
+            android:id="@+id/drawer_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:layout_marginLeft="22dp"
+            android:layout_marginTop="5dp"
+            android:text="계정이메일 주소"
+            android:textSize="15sp"
+            android:textStyle="normal"/>
+    </LinearLayout>
+
+</RelativeLayout>

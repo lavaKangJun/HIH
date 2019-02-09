@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.youmeelee.handinhand.tempTutorialActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:src="@mipmap/loginactivity_main"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="340dp"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/buttonstyle"
+                android:onClick="onJoinButtonClicked"
+                android:text="SIGN UP"
+                android:typeface="sans"
+                android:textColor="#999"
+                android:textSize="15dp" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_above="@+id/button2"
+                android:layout_gravity="right"
+                android:layout_marginTop="30dp"
+                android:onClick="onLoginButtonClicked"
+                android:text="LOG-IN"
+                android:typeface="sans"
+                android:background="@drawable/buttonstyle"
+                android:textColor="#999"
+                android:textSize="15dp" />
+
+        </LinearLayout>
+
+        <!--
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SKIP"
+            android:textSize="30sp"
+            android:id="@+id/button"
+            android:layout_centerInParent="true"
+            android:layout_alignParentRight="true"
+            android:onClick="skip"/>
+
+            -->
+
+    </RelativeLayout>
+
+
+</LinearLayout>

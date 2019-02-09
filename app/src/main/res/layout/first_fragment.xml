@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        card_view:cardCornerRadius="6dp">
+
+        <LinearLayout
+            android:id="@+id/linealayout"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/top_layout"
+                android:layout_width="match_parent"
+                android:layout_height="250dp">
+
+                <ImageView
+                    android:id="@+id/cv_img"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:layout_gravity="center"
+                    android:scaleType="fitXY" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <!-- 타임라인 텍스트 레이아웃 -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="80dp"
+                            android:gravity="center_vertical|center_horizontal">
+
+                            <!-- user A-->
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_marginLeft="70dp"
+                                android:gravity="center_vertical|center_horizontal"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/user_a"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:shadowColor="#FF464646"
+                                    android:shadowDx="1.0"
+                                    android:shadowDy="1.0"
+                                    android:shadowRadius="1.0"
+                                    android:text="USERA"
+                                    android:textColor="#ffffff"
+                                    android:textSize="18sp" />
+
+                                <TextView
+                                    android:id="@+id/tempa"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10dp"
+                                    android:shadowColor="#FF464646"
+                                    android:shadowDx="1.0"
+                                    android:shadowDy="1.0"
+                                    android:shadowRadius="1.0"
+                                    android:text="TempA"
+                                    android:textColor="#ffffff"
+                                    android:textSize="20sp" />
+
+                            </LinearLayout>
+
+                            <!-- user B -->
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginRight="70dp"
+                                android:gravity="center_vertical|center_horizontal"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/user_b"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:shadowColor="#FF464646"
+                                    android:shadowDx="1.0"
+                                    android:shadowDy="1.0"
+                                    android:shadowRadius="1.0"
+                                    android:text="USERB"
+                                    android:textColor="#ffffff"
+                                    android:textSize="18sp" />
+
+                                <TextView
+                                    android:id="@+id/tempb"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10dp"
+                                    android:shadowColor="#FF464646"
+                                    android:shadowDx="1.0"
+                                    android:shadowDy="1.0"
+                                    android:shadowRadius="1.0"
+                                    android:text="TempB"
+                                    android:textColor="#ffffff"
+                                    android:textSize="20sp" />
+                            </LinearLayout>
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/date"
+                            android:layout_width="300dp"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tempa"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:shadowColor="#FF464646"
+                            android:shadowDx="1.0"
+                            android:shadowDy="1.0"
+                            android:shadowRadius="1.0"
+                            android:text="Date"
+                            android:textColor="#ffffff"
+                            android:textSize="24sp" />
+
+                        <TextView
+                            android:id="@+id/timelineId"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignEnd="@+id/date"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginTop="10dp"
+                            android:text="TimeLindId" />
+                    </LinearLayout>
+                </LinearLayout>
+
+            </RelativeLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

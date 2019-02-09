@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/secondfrag_back"
+    android:orientation="vertical">
+
+    <ImageView
+        android:src="@mipmap/secondfrag_step_four"
+        android:layout_width="228dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_gravity="left"/>
+
+    <Button
+        android:id="@+id/okButton"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_above="@+id/receiveString"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:textColor="#999"
+        android:typeface="sans"
+        android:background="@drawable/buttonstyle"
+        android:onClick="buttonClick"
+        android:text="MEASURE TEMPER" />
+
+    <ImageView
+        android:src="@mipmap/secondfrag_step_five"
+        android:layout_width="228dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_gravity="left"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="나의 체온 : "
+            android:textColor="#ffffff" />
+
+        <EditText
+            android:id="@+id/receiveString"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:focusable="false"
+            android:gravity="top"
+            android:inputType="textMultiLine"
+            android:textColor="#ffffff" />
+    </LinearLayout>
+
+    <ImageView
+        android:src="@mipmap/secondfrag_step_six"
+        android:layout_width="228dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="10dp"
+        android:layout_gravity="left"/>
+
+    <Button
+        android:id="@+id/start"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:textColor="#999"
+        android:background="@drawable/buttonstyle"
+        android:onClick="startShow"
+        android:tag="climbing"
+        android:typeface="sans"
+        android:text="START VIDEO" />
+
+</LinearLayout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/loginactivity_main"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context="com.example.youmeelee.handinhand.LoginActivity">
+
+
+    <EditText
+        android:id="@+id/et_email"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="190dp"
+        android:hint="Email"
+        android:textSize="15sp"
+        android:imeOptions="actionNext"
+        android:inputType="text"
+        android:textColor="#ffffff"
+        android:textColorHint="#ffffff"
+        android:typeface="sans" />
+
+    <EditText
+        android:id="@+id/et_pass"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:hint="Password"
+        android:textSize="15sp"
+        android:imeOptions="actionDone"
+        android:inputType="textPassword"
+        android:textColor="#ffffff"
+        android:textColorHint="#ffffff"
+        android:typeface="sans" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/buttonstyle"
+        android:onClick="onLoginButtonClicked"
+        android:text="Login"
+        android:textColor="#999"
+        android:typeface="sans" />
+
+    <TextView
+        android:id="@+id/join"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="회원가입 하시겠습니까?"
+        android:textColor="#ffffff" />
+
+</LinearLayout>
